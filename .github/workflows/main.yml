@@ -27,11 +27,11 @@ jobs:
         with:
           python-version: 3.8
         # 安装脚本所需的依赖
-      - name: 'Install requests'
-        run: pip install requests
+      - name: 'Install selenium'
+        run: pip install selenium
         # 运行脚本
       - name: 'Working'
         env:	#添加环境变量
-          SCKEY: ${{ secrets.SCKEY }}
-          SKEY: ${{ secrets.SKEY }}
+          id: ${{ secrets.ID }}
+          passw: ${{ secrets.PASSW }}
         run: python ./daka.py
