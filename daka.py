@@ -42,6 +42,7 @@ def tick(driver, id, passw):
 # 1.地址栏输入，chrome://version/，查看自己的版本
 # 2.在列表中下载对应版本的驱动exe文件，http://chromedriver.storage.googleapis.com/index.html
 # 3.将所下载文件放入Python/Lib目录下，并将此目录 添加到环境变量PATH
+chromedriver = "/usr/bin/chromedriver"
 driver = webdriver.Chrome()
 # Firefox
 # driver = webdriver.Firefox()
