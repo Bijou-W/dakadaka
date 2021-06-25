@@ -60,7 +60,7 @@ driver = webdriver.Chrome(chrome_options=chrome_options,executable_path=chromedr
 # 填表
 id = os.environ.get('ID') 
 passw = os.environ.get('PASSW')
-tick(driver, idi, passw)
+tick(driver, id, passw)
 #filename = ".\\id+passw.txt"
 #with open(filename, 'r') as f:
     #lines = f.readlines()
