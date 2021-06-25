@@ -34,4 +34,7 @@ jobs:
         env:	#添加环境变量
           id: ${{ secrets.ID }}
           passw: ${{ secrets.PASSW }}
-        run: python ./daka.py
+        run: |
+          sudo cp -p ./chrome/chromedriver /usr/bin/
+          chmod -R 777 /usr/bin/chromedriver
+          python ./daka.py
