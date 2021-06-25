@@ -50,7 +50,7 @@ chrome_options.add_argument('--disable-gpu')
 chrome_options.add_argument('--disable-dev-shm-usage')
 chromedriver = "/usr/bin/chromedriver"
 os.environ["webdriver.chrome.driver"] = chromedriver
-driver = webdriver.Chrome(options=chrome_options,executable_path=chromedriver)
+driver = webdriver.Chrome(chrome_options=chrome_options,executable_path=chromedriver)
 # Firefox
 # driver = webdriver.Firefox()
 # 浏览器后台运行
