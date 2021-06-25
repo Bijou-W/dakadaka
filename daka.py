@@ -8,9 +8,9 @@ import sys
 import string
  
  
-def tick(driver, idi, passw):
+def tick(driver, id, passw):
     driver.get("https://stuhealth.jnu.edu.cn/#/login")
-    driver.find_element_by_id('zh').send_keys(idi)
+    driver.find_element_by_id('zh').send_keys(id)
     driver.find_element_by_id('passw').send_keys(passw)
     # 登录
     driver.find_element_by_id('passw').send_keys(Keys.ENTER)
@@ -58,7 +58,7 @@ driver = webdriver.Chrome(chrome_options=chrome_options,executable_path=chromedr
 # option.add_argument('headless') # 设置option
 # driver = webdriver.Chrome(chrome_options=option)  # 调用带参数的谷歌浏览器
 # 填表
-idi = os.environ.get('ID') ##Server酱推送KEY
+id = os.environ.get('ID') 
 passw = os.environ.get('PASSW')
 tick(driver, idi, passw)
 #filename = ".\\id+passw.txt"
