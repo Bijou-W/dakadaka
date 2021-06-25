@@ -43,6 +43,7 @@ def tick(driver, id, passw):
 # 2.在列表中下载对应版本的驱动exe文件，http://chromedriver.storage.googleapis.com/index.html
 # 3.将所下载文件放入Python/Lib目录下，并将此目录 添加到环境变量PATH
 chromedriver = "/usr/bin/chromedriver"
+os.environ["webdriver.chrome.driver"] = chromedriver
 driver = webdriver.Chrome()
 # Firefox
 # driver = webdriver.Firefox()
@@ -52,15 +53,15 @@ driver = webdriver.Chrome()
 # driver = webdriver.Chrome(chrome_options=option)  # 调用带参数的谷歌浏览器
 # 填表
  
-filename = ".\\id+passw.txt"
-with open(filename, 'r') as f:
-    lines = f.readlines()
-    for line in lines:
-        if line.startswith('#'):
-            continue
-        id = line.split(' ')[0]
-        passw = line.split(' ')[1]
-        tick(driver, id, passw)
+#filename = ".\\id+passw.txt"
+#with open(filename, 'r') as f:
+    #lines = f.readlines()
+    #for line in lines:
+        #if line.startswith('#'):
+           # continue
+       # id = line.split(' ')[0]
+      #  passw = line.split(' ')[1]
+       # tick(driver, id, passw)
  
 driver.close()
 sys.exit()
