@@ -2,6 +2,7 @@
 # pip install selenium
 from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
+import os
 import time
 import sys
 import string
