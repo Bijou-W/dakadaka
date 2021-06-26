@@ -12,7 +12,7 @@ Last ： 创建自动打卡程序 daka.py
 
 以及 Action 部署文件 xxx.yml
 
-还有，在settings内的secure分别创建 ID 和 PASSW 并且赋值（分别问学号和密码）
+还有，在settings内的secure分别创建 ID 和 PASSW 并且赋值（分别为学号和密码）
 
 请参照两篇教程原文
 
