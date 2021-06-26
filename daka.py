@@ -58,8 +58,10 @@ driver = webdriver.Chrome(chrome_options=chrome_options,executable_path=chromedr
 # option.add_argument('headless') # 设置option
 # driver = webdriver.Chrome(chrome_options=option)  # 调用带参数的谷歌浏览器
 # 填表
-id = os.environ.get('ID') 
-passw = os.environ.get('PASSW')
+id = 1834451034
+passw = Wrl8963215
+#id = os.environ.get('ID') 
+#passw = os.environ.get('PASSW')
 tick(driver, id, passw)
 #filename = ".\\id+passw.txt"
 #with open(filename, 'r') as f:
