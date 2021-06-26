@@ -1,3 +1,5 @@
+利用 GITHUB ACTION 和 python selenium， 实现自动打卡（JNU）
+
 #搬运自CSDN 雾进 &  xapxxf
 
 #利用 python selenium 库，自动化控制浏览器
